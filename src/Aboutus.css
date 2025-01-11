@@ -1,0 +1,153 @@
+.about-us-page {
+  font-family: Arial, sans-serif;
+}
+
+.hero-section2 {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-section {
+  padding: 50px 20px; /* Adjust padding for smaller screens */
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #eeeeee;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.mission,
+.vision {
+  flex: 1;
+  text-align: left;
+  min-width: 300px; /* Ensure proper sizing on smaller screens */
+}
+
+.mission h3,
+.vision h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mission p,
+.vision p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.divider-image {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.milestones-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.milestones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.milestone {
+  flex: 1;
+  min-width: 150px; /* Ensure milestones fit on smaller screens */
+}
+
+.milestone h3 {
+  font-size: 2rem;
+}
+
+.origin-story-section {
+  padding: 50px 20px; /* Adjust padding for smaller screens */
+  text-align: center;
+  max-width: 1000px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.origin-story-section h2 {
+  margin-bottom: 20px;
+}
+
+.origin-story-section p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 1000px; /* Limit max width of paragraphs */
+  margin-left: auto;
+  margin-right: auto; /* Center paragraphs horizontally */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .origin-story-section {
+    padding: 40px 20px; /* Adjust padding on smaller screens */
+  }
+
+  .origin-story-section h2 {
+    font-size: 1.8rem; /* Adjust heading font size */
+  }
+
+  .origin-story-section p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column; /* Stack mission, image, and vision vertically */
+    align-items: center;
+  }
+
+  .divider-image {
+    width: 200px; /* Smaller image size on small screens */
+    height: 200px;
+  }
+
+  .milestone h3 {
+    font-size: 1.5rem; /* Adjust font size for milestones */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .milestone h3 {
+    font-size: 1.2rem; /* Further reduce font size for milestones */
+  }
+}

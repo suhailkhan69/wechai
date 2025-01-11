@@ -1,0 +1,35 @@
+/* Override slick styles */
+.carousel-container .slick-prev,
+.carousel-container .slick-next {
+  color: white;
+  z-index: 1;
+
+}
+
+.carousel-container .slick-prev:hover,
+.carousel-container .slick-next:hover {
+  color: #f5f5f5;
+}
+
+.carousel-container .slick-dots li button:before {
+  color: white;
+}
+
+.carousel-container .slick-dots li.slick-active button:before {
+  color: #b61111;
+}
+
+.slick-next {
+    right: 0px;
+}
+.slick-prev {
+    left: 0px;
+}
+
+/* Image styling */
+.carousel-image {
+  width: 98%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}

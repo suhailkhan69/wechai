@@ -1,0 +1,600 @@
+.App {
+  text-align: center;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.App-section-test{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.App-section {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Video Section Styles */
+.App-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.App-video-overlay {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Founder Section Styles */
+.founder-section {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding-bottom: 20px; /* Prevent image overflow into the section below */
+}
+
+.founder-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
+}
+
+.founder-text {
+  flex: 1;
+}
+
+.founder-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.founder-title .highlight {
+  color: #FFD700;
+}
+
+.founder-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.founder-image {
+  flex: 0 0 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.founder-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* Responsive Design for Founder Section */
+@media (max-width: 1024px) {
+  .founder-content {
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .founder-image {
+    flex: 0 0 350px;
+  }
+
+  .founder-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-content {
+    flex-direction: column-reverse; /* Stack text below the image */
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .founder-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%; /* Ensure the image fills the screen */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .founder-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .founder-paragraph {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-content {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .founder-title {
+    font-size: 1.8rem;
+  }
+
+  .founder-image {
+    max-width: 100%; /* Full width for very small screens */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .founder-paragraph {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #fff; /* Fixed typo */
+  /* color: white; */
+  text-align: center; /* Center the text and image */
+  overflow: hidden;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  flex-direction: column; /* Stack the text and image */
+  gap: 40px;
+}
+
+.about-image {
+  position: relative;
+  width: 100%; /* Make the image full width of its container */
+  max-width: 1500px; /* Increase the maximum width for a significantly larger image */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Text above image */
+.about-image-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for About section */
+@media (max-width: 1024px) {
+  .about-content {
+    padding: 0 40px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .about-image {
+    width: 100%; /* Make image take the full width */
+    max-width: 1500px; /* Keep image size large */
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-image {
+    max-width: 100%; /* Full width for very small screens */
+  }
+}
+
+/* Section 4 - Testimonials Styles */
+
+/* Text for Testimonials Section */
+.testimonials-text {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.testimonials-text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.testimonials-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5E5E5E;
+  margin-top: 10px;
+}
+
+/* Grid for Images */
+.testimonials-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  grid-gap: 20px; /* Gap between images */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .testimonials-images {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-images {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for smaller screens */
+    padding-bottom: 20px; /* Prevents images from overlapping into the next section */
+  }
+
+  .testimonials-text h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials-text p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Image Carousel */
+.carousel-container {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Responsive Carousel */
+@media (max-width: 1024px) {
+  .carousel-container {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+}
+
+/* Franchise Section */
+.franchise-section {
+  background-color: #282828;
+  padding: 60px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.franchise-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.franchise-text h2 {
+  font-size: 2.5rem;
+  color: #FFD700;
+}
+
+.franchise-text p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Form Styles */
+.franchise-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.btn-submit {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD700;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .franchise-text h2 {
+    font-size: 2rem;
+  }
+
+  .franchise-text p {
+    font-size: 1rem;
+  }
+}
+
+
+.contact-page {
+  background-color: #f9f5f3;
+  color: #333;
+}
+
+.hero-section-new {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  border: 2px solid #a26c30;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 0; /* Ensures no extra space between sections */
+}
+
+.contact-form,
+.contact-details {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  background-color: #eee6df;
+}
+
+.contact-details {
+  background-color: #fff9ef;
+}
+
+.contact-form h2,
+.contact-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: left; /* Ensures alignment for smaller screens */
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form .input-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows proper alignment in smaller screens */
+}
+
+.contact-form .input-row input {
+  flex: 1;
+  min-width: 48%; /* Ensures inputs remain side-by-side on larger screens */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #a26c30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #935e2f;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  text-align: left; /* Ensures alignment consistency in stacked layout */
+}
+
+.contact-details p strong {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    gap: 20px; /* Adds space between sections */
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-form h2,
+  .contact-details h2 {
+    text-align: center; /* Aligns section headers properly */
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    margin-bottom: 15px; /* Adjusts spacing between inputs */
+  }
+
+  .contact-form .input-row input {
+    min-width: 100%; /* Stacks inputs vertically */
+  }
+
+  .contact-form button {
+    margin-top: 10px;
+  }
+}
