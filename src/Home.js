@@ -11,8 +11,7 @@ function Home() {
     <div className="App">
 
 
-      <Navbar />
-
+     
       {/* Section 1 - Video */}
       <section className="App-section-test">
         <video className="App-video" autoPlay muted loop>
