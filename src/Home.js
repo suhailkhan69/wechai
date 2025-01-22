@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 import AboutUs from './Aboutus';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Footer';
+import CountUp from 'react-countup';
 
 function Home() {
   return (
@@ -59,7 +60,41 @@ function Home() {
           </div>
         </div>
       </section>
-
+ {/* Milestones Section with Counting Effect */}
+ <div className="milestones-section" style={{
+          backgroundImage: 'url(/images/Frame15.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '50px 20px',
+          color: 'white',
+          textAlign: 'center',
+        }} >
+        <h2>Significant Milestones Achieved</h2>
+        <div className="milestones">
+          <div className="milestone">
+            <h3>
+              <CountUp start={0} end={4000} duration={3} separator="," />
+              +
+            </h3>
+            <p>Employee Family</p>
+          </div>
+          <div className="milestone">
+            <h3>
+              <CountUp start={0} end={1100} duration={2} separator="," />
+              +
+            </h3>
+            <p>Entrepreneurs</p>
+          </div>
+          <div className="milestone">
+            <h3>
+              <CountUp start={0} end={32} duration={6} decimals={0} />
+              cr+
+            </h3>
+            <p>Number of Cups Sold</p>
+          </div>
+        </div>
+      </div>
             {/* Section 4 with background image */}
 <section
   className="App-section testimonials-section"
@@ -147,7 +182,7 @@ function Home() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    
+
   }}
 >
 <div className="testimonials-text">

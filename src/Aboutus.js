@@ -46,32 +46,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Milestones Section */}
-      <div className="milestones-section" style={{
-    backgroundImage: 'url(/images/Frame15.png)', // Replace with your image path
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    padding: '50px 20px',
-    color: 'white',
-    textAlign: 'center',
-  }} >
-        <h2>Significant Milestones Achieved</h2>
-        <div className="milestones">
-          <div className="milestone">
-            <h3>4000+</h3>
-            <p>Employee Family</p>
-          </div>
-          <div className="milestone">
-            <h3>1100+</h3>
-            <p>Entrepreneurs</p>
-          </div>
-          <div className="milestone">
-            <h3>32cr+</h3>
-            <p>Number of Cups Sold</p>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Origin Story Section */}
       <div className="origin-story-section">
