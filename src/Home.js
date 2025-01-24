@@ -12,8 +12,7 @@ function Home() {
     <div className="App">
 
 
-      <Navbar />
-
+     
       {/* Section 1 - Video */}
       <section className="App-section-test">
         <video className="App-video" autoPlay muted loop>
@@ -99,7 +98,7 @@ function Home() {
 <section
   className="App-section testimonials-section"
   style={{
-    backgroundImage: 'url(/images/bg.png)',
+    backgroundImage: 'url(/images/bg1.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: 'white',
@@ -118,31 +117,31 @@ function Home() {
   
   <div className="testimonials-images">
     <div className="testimonial-image">
-      <img src="/images/Group 3.png" alt="Testimonial 1" />
+      <img src="/images/bun.png" alt="Testimonial 1" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 4.png" alt="Testimonial 2" />
+      <img src="/images/brea.png" alt="Testimonial 2" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 5.png" alt="Testimonial 3" />
+      <img src="/images/burger.png" alt="Testimonial 3" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 6 (1).png" alt="Testimonial 4" />
+      <img src="/images/falooda.png" alt="Testimonial 4" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 6.png" alt="Testimonial 5" />
+      <img src="/images/fires.png" alt="Testimonial 5" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 7 (1).png" alt="Testimonial 6" />
+      <img src="/images/chicken.png" alt="Testimonial 6" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 7.png" alt="Testimonial 7" />
+      <img src="/images/rose.png" alt="Testimonial 7" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 8 (1).png" alt="Testimonial 8" />
+      <img src="/images/coffee.png" alt="Testimonial 8" />
     </div>
     <div className="testimonial-image">
-      <img src="/images/Group 8.png" alt="Testimonial 9" />
+      <img src="/images/tandoori tea.png" alt="Testimonial 9" />
     </div>
   </div>
 </section>
@@ -164,8 +163,8 @@ function Home() {
   }}
 >
 <div className="testimonials-text">
-    <h2>Our Core Products</h2>
-    <p>Each item on our menu is thoughtfully handpicked, crafted with care to delight and satisfy the unique tastes of our beloved customers</p>
+    <h2>Our Locations</h2>
+    <p>Here are the locations where our brand is successfully operating and serving millions of customers daily</p>
   </div>
     <Carousel/>
 </section>
@@ -176,8 +175,8 @@ function Home() {
     
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    color: 'white',
-    padding: '50px 20px',
+    color: 'black',
+    padding: '50px 20px 150px',
     height: '100vh',  // Ensure the section height doesn't overflow
     display: 'flex',
     flexDirection: 'column',
@@ -193,7 +192,7 @@ function Home() {
           <div className="contact-card">
             {/* Contact Form */}
             <div className="contact-form">
-              <h2>We would love to hear from you</h2>
+              <h2>We would love to hear from you !!</h2>
               <form>
                 <input type="text" placeholder="Name" required />
                 <input type="email" placeholder="Email address" required />

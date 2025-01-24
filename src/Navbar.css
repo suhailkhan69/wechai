@@ -20,6 +20,7 @@
   align-items: center;
   padding: 0 20px;
   width: 100%;
+  margin-left: 20px; /* Added to shift the menu to the right */
 }
 
 /* Logo container */
@@ -28,13 +29,6 @@
   align-items: center;
   justify-content: flex-start; /* Align logo to the left */
   flex: 0 1 auto; /* Allow logo to shrink, but not grow */
-     /* Space between logo and nav links */
-}
-
-.logo {
-  width: 100px; /* Increase logo size */
-  height: auto;
-  background-color: transparent;
 }
 
 /* Navigation links */
@@ -42,7 +36,6 @@
   display: flex;
   list-style-type: none;
   justify-content: center;
-  /* align-items: center; */
   gap: 20px;
   flex-grow: 1; /* Allow nav links to take available space */
   justify-content: flex-start;

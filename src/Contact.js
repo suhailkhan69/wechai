@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="contact-card">
             {/* Contact Form */}
             <div className="contact-form">
-              <h2>We would love to hear from you</h2>
+              <h2>We would love to hear from you !!</h2>
               <form>
                 <input type="text" placeholder="Name" required />
                 <input type="email" placeholder="Email address" required />
@@ -57,7 +57,10 @@ const Contact = () => {
                 <strong>Email:</strong> gm@davnmel.com
               </p>
               <p>
-                <strong>Phone:</strong> +91 95662 22275 / +91 72001 64964
+                <strong>Numbers for South India : </strong> +91 95662 22275 / +91 72001 64964
+              </p>
+              <p>
+                <strong>Numbers for Rest of India : </strong> +91 98407 33822 / +91 87544 04544
               </p>
             </div>
           </div>

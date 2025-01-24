@@ -1,29 +1,16 @@
-/* Override slick styles */
+/* Hide next and previous arrows */
 .carousel-container .slick-prev,
 .carousel-container .slick-next {
-  color: white;
-  z-index: 1;
-
+  display: none !important; /* This hides the arrows */
 }
 
-.carousel-container .slick-prev:hover,
-.carousel-container .slick-next:hover {
-  color: #f5f5f5;
-}
-
+/* Adjust dot styles */
 .carousel-container .slick-dots li button:before {
   color: white;
 }
 
 .carousel-container .slick-dots li.slick-active button:before {
   color: #b61111;
-}
-
-.slick-next {
-    right: 0px;
-}
-.slick-prev {
-    left: 0px;
 }
 
 /* Image styling */

@@ -6,14 +6,14 @@ import './carousel.css';
 
 const Carousel = () => {
   const images = [
-    '/images/chennai.png',
-    '/images/coimbatore.png',
-    '/images/erode.png',
-    '/images/madurai.png',
-    '/images/madurai1.png',
+    '/images/kerala.png',
+    '/images/tamil.png',
+    '/images/telangana.png',
+    '/images/karnataka.png',
+    '/images/srilanka.png',
     '/images/pondi.png',
-    '/images/salem.png',
-    '/images/trichi.png',
+    '/images/odisha.png',
+    '/images/delhi.png',
   ];
 
   const settings = {
