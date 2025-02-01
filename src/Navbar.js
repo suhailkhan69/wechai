@@ -16,6 +16,7 @@ const brands = [
   { name: 'Wecrunch', path: 'https://wecrunchfranchise.in/' },
   { name: 'Rolexcoffee', path: 'https://rollexcoffeefranchise.com/' },
   { name: 'Milkyma', path: 'https://www.milkymastore.in/' },
+  { name: 'Wechai', path: 'https://wechai.co.in/' },
 ];
 
 function Navbar() {
