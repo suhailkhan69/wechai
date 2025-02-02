@@ -86,8 +86,10 @@ const Contact = () => {
               <h2>You can also reach out to us on these addresses</h2>
               <p><strong>Address:</strong> 1st Floor, 36/37 Redhills High Road, Samdarriya Colony, Kolathur, Chennai-600099</p>
               <p><strong>Email:</strong> gm@davnmel.com</p>
-              <p><strong>Numbers for South India:</strong> +91 95662 22275 / +91 72001 64964</p>
-              <p><strong>Numbers for Rest of India:</strong> +91 98407 33822 / +91 87544 04544</p>
+              <p><strong>Numbers for South India:</strong> <p>Tamilnadu , Karnataka , Kerala , Andhra Pradesh , Pondicherry & Telangana.</p></p>
+              <p>+91 95662 22275 / +91 72001 64964</p>
+              <p><strong>Numbers for Rest of India:</strong></p>
+              <p> +91 98407 33822 / +91 87544 04544</p>
             </div>
           </div>
         </div>

@@ -59,7 +59,7 @@ const AboutUs = () => {
         </p>
         <p>
           With over 17 years of industry experience, David launched several successful brands,
-          including We Chai, Mad Fries, We Crunch, and Milkyna. Together, these brands operate
+          including We Chai, Mad Fries, We Crunch, Rolexcoffee and Milkyma. Together, these brands operate
           1,100+ outlets in India and Sri Lanka, with plans for international expansion to Canada
           and the Philippines.
         </p>
